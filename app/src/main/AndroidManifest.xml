@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sintel.defteregimmibefulfulde">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SommaireActivity"
+            android:label="Table Alphabétique">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity android:name=".FavorisActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity android:name=".CantiqueActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="Recherche d&apos;un cantique">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListeCantiques"
+            android:label="Tous les Cantiques">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity
+            android:name=".APropos"
+            android:label="A Propos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuideUtilisation"
+            android:label="Guide d&apos;utilisation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.defteregimmibefulfulde.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:scrollbars="none"
+    tools:context=".APropos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="false"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/image"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="DEFTERE GIMMI BE FULFULDE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/commentaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Cantique de l'Eglise Adventiste du Septième Jour en langue fulfulde"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentaire"
+                android:layout_alignLeft="@+id/commentaire"
+                android:text="Version 3.1"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Description:"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_margin="12dp"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/description"/>
+
+        <TextView
+            android:id="@+id/Caracteristiques1"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Caracteristiques:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/Caracteristiques2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="16dp"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/caracteristiques"/>
+
+        <TextView
+            android:id="@+id/auteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordonnées du developpeur"
+            android:layout_marginLeft="12dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_auteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/nom_auteur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/image_auteur"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_auteur"
+                android:text="Touza Isaac"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/image_localisation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_auteur"
+                android:layout_marginTop="27dp"
+                android:layout_alignTop="@id/image_auteur"
+                android:layout_marginLeft="12dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_place_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_localisation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_localisation"
+                android:layout_alignTop="@+id/image_localisation"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="16dp"
+                android:text="Maroua, Cameroun"/>
+
+            <ImageView
+                android:id="@+id/image_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_auteur"
+                android:layout_marginTop="27dp"
+                android:layout_alignTop="@id/image_localisation"
+                android:layout_marginLeft="12dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/numero_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_phone"
+                android:layout_alignTop="@+id/image_phone"
+                android:textColor="?attr/primaryTextColor"
+                android:autoLink="phone"
+                android:textColorLink="?attr/primaryTextColor"
+                android:textSize="16dp"
+                android:text="+237 691 805 321 / +237 672 277 579"/>
+
+            <ImageView
+                android:id="@+id/image_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_auteur"
+                android:layout_marginTop="27dp"
+                android:layout_alignTop="@id/image_phone"
+                android:layout_marginLeft="12dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_mail_outline_black_24dp" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_mail"
+                android:layout_alignTop="@+id/image_mail"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="16dp"
+                android:textColorLink="?attr/primaryTextColor"
+                android:autoLink="email"
+                android:text="isaac_touza@outlook.fr"/>
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/nb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_mail"
+                android:layout_margin="12dp"
+                android:textSize="16dp"
+                android:textColor="?attr/primaryTextColor"
+                android:text="@string/nb"
+                />
+            <TextView
+                android:id="@+id/verset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/verset"
+                android:layout_below="@id/nb"
+                android:layout_marginLeft="12dp"
+                android:textSize="14dp"
+                android:textColor="?attr/primaryTextColor"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fermer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guide"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/colorPrimary"
+            android:onClick="Fermer"
+            android:text="Fermer la page"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

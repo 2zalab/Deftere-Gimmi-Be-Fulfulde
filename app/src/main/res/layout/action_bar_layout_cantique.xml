@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+
+    <!--ImageView
+        android:id="@+id/Imgbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_music_note_black"
+        android:layout_alignParentLeft="true"/-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="false"
+        android:text="Lyrics"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+    <ImageView
+        android:id="@+id/sombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/share"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_baseline_brightness_medium_24"
+        android:tint="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_share_black_24dp"
+        android:tint="@android:color/white"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg" format="color"/>
+    <attr name="cardViewBackground" format="color"/>
+    <attr name="primaryTextColor" format="color"/>
+    <attr name="secondaryTextColor" format="color"/>
+    <attr name="bottomAppBarColor" format="color"/>
+    <attr name="ColorButon" format="color"/>
+    <attr name="dividerColor" format="color"/>
+    <attr name="colorHint" format="color"/>
+    <attr name="expendableColor" format="color"/>
+    <attr name="colorExpendableGroup" format="color"/>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:layout_centerInParent="true"
+    tools:context=".HomeActivity"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="153dp"
+            android:layout_height="127dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@mipmap/logo" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="from"
+            android:textAlignment="center"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+           android:layout_above="@id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="S-Intel"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <!--ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:padding="20dp"
+            android:layout_above="@id/textView"/-->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--item name="android:windowBackground">@android:color/transparent</item-->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="bg">#e4e4e4</item>
+        <item name="cardViewBackground">#FFF</item>
+        <item name="primaryTextColor">#DE000000</item>
+        <item name="secondaryTextColor">#8A000000</item>
+        <item name="bottomAppBarColor">@color/colorPrimary</item>
+        <item name="ColorButon">@color/colorPrimary</item>
+        <item name="colorHint">@color/colorPrimaryNight</item>
+        <item name="dividerColor">#AAAAAA</item>
+        <item name="expendableColor">@color/colorExpendableGroup</item>
+        <item name="itemTextColor">#000</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="bg">#121212</item>
+        <item name="cardViewBackground">@color/colorPrimaryDarkNight</item>
+        <item name="primaryTextColor">#FFF</item>
+        <item name="secondaryTextColor">#b3FFFFFF</item>
+        <item name="bottomAppBarColor">@color/colorPrimaryNight</item>
+        <item name="ColorButon">@color/colorPrimaryNight</item>
+        <item name="colorHint">#b3FFFFFF</item>
+        <item name="dividerColor">#b3FFFFFF</item>
+        <item name="expendableColor">@color/colorExpendableGroupNight</item>
+        <item name="itemTextColor">#FFF</item>
+    </style>
+
+
+    <style name="DarkMode" parent="AppThemeDark">
+       <item name="android:windowAnimationStyle">@style/WindowsAnimationTransition</item>
+    </style>
+
+    <style name="WindowsAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">?attr/colorHint</item>
+        <item name="android:textColorHint">?attr/colorHint</item>
+        <item name="colorControlNormal">?attr/colorHint</item>
+        <item name="colorControlActivated">?attr/colorHint</item>
+        <item name="colorControlHighlight">?attr/colorHint</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:searchIcon">@drawable/ic_search_black_24dp</item>
+        <item name="android:textColorHint">?attr/primaryTextColor</item>
+        <item name="android:textColorPrimary">?attr/primaryTextColor</item>
+        <item name="backgroundColor">?attr/primaryTextColor</item>
+    </style>
+
+</resources>

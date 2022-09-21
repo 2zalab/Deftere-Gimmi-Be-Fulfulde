@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/prev"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:onClick="AfficherCantiquePrecedent"
+        android:title="Précedent" />
+
+    <item
+        android:id="@+id/reduire"
+        android:icon="@drawable/ic_baseline_zoom_out_24"
+        android:onClick="ReduireTexte"
+        android:title="Réduire" />
+    <item
+        android:id="@+id/favoris"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:onClick="AjouterFavoris"
+        android:title="Favoris" />
+    <item
+        android:id="@+id/agrandir"
+        android:icon="@drawable/ic_baseline_zoom_in_24"
+        android:onClick="AgrandirTexte"
+        android:title="Agrandir" />
+    <item
+        android:id="@+id/nex"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:onClick="AfficherCantiqueSuivant"
+        android:title="Suivant" />
+</menu>

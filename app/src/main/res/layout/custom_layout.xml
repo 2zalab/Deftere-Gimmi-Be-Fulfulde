@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center_horizontal"
+    tools:context=".ListeCantiques">
+
+    <!--ImageView
+        android:id="@+id/ImageCantique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher"/-->
+
+
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/circle_background"
+            android:text="121"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titre cantique"
+        android:textSize="18sp"
+        android:textColor="?attr/primaryTextColor"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/numero"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        android:layout_marginRight="10dp"
+        android:tint="?attr/colorPrimary"/>
+
+
+</RelativeLayout>

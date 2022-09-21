@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <!--LinearLayout
+        android:id="@+id/LayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+    </LinearLayout-->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="?attr/cardViewBackground"
+    android:layout_margin="10dp">
+
+    <SearchView
+        style="@style/SearchViewStyle"
+        android:id="@+id/IdsearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SearchViewStyle"
+        android:queryHint="Entrer le titre"
+        android:iconifiedByDefault="false" />
+</androidx.cardview.widget.CardView>
+
+<TextView
+    android:id="@+id/nb_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="italic|bold"
+    android:layout_margin="5dp"
+    android:fontFamily="casual"
+    android:textColor="@android:color/black"
+    android:textSize="13sp"/>
+
+    <ListView
+        android:id="@+id/ResultatRecherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

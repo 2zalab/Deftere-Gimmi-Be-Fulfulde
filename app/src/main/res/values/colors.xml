@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#AC6804</color>
+    <color name="colorPrimaryDark">#885305</color>
+    <color name="colorAccent">#AC6804</color>
+    <!-- Light color-->
+    <!--color name="colorPrimary">#008577-044273</color-->
+    <!--color name="colorPrimaryDark">#00574B-022F53</color-->
+    <!--color name="colorAccent">#008000</color-->
+    <color name="colorExpendableGroup">#AC6804</color>
+    <color name="itemTextColor">#000</color>
+
+    <!-- Night color-->
+    <color name="colorPrimaryNight">#3E3E3E</color>
+    <color name="colorPrimaryDarkNight">#212121</color>
+    <color name="colorAccentNight">#FFFF</color>
+    <!--color name="colorAccentNight">#212121</color-->
+    <color name="colorPrimaryTitleNight">#FFFF</color>
+    <color name="Orange">#FF770E</color>
+    <color name="colorExpendableGroupNight">#FFF</color>
+
+</resources>

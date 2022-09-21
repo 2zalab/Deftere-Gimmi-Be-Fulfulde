@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    tools:context=".ListeCantiques">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/cardViewBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <SearchView
+            style="@style/SearchViewStyle"
+            android:id="@+id/searchView"
+            android:theme="@style/SearchViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Entrer le titre"
+            android:foregroundTint="?attr/primaryTextColor"
+            android:backgroundTint="?attr/primaryTextColor"
+            android:iconifiedByDefault="false"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="?attr/cardViewBackground"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/ListeCantiques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?attr/dividerColor"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

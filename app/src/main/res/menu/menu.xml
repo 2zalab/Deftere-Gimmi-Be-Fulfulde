@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_baseline_brightness_medium_24"
+        android:onClick="ActiverModeSombre"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"
+        android:title="ModeSombre"/>
+
+    <item
+        android:icon="@drawable/ic_menu_black_24dp"
+        app:showAsAction="always"
+        android:title="Menu">
+
+
+        <menu>
+
+            <item android:id="@+id/share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Partager"
+                app:showAsAction="never"
+                android:onClick="Partager"
+                />
+
+            <item android:id="@+id/noter"
+                android:icon="@drawable/ic_baseline_star_half_24"
+                android:title="Noter cette application"
+                android:iconTint="@android:color/black"
+                app:showAsAction="never"
+                android:onClick="noter"
+                />
+            <item android:id="@+id/guide"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Guide d'utilisation"
+                app:showAsAction="never"
+                android:onClick="guide"
+                />
+            <item android:id="@+id/apropos"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="A Propos"
+                app:showAsAction="never"
+                android:onClick="propos"
+                />
+
+            <item android:id="@+id/exit"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Quitter"
+                app:showAsAction="never"
+                android:onClick="exit"
+                />
+        </menu>
+
+    </item>
+</menu>

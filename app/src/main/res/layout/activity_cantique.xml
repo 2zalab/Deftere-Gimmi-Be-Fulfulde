@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".CantiqueActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:scrollbars="none"
+        android:layout_marginBottom="-5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/precedent"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_zoom_out_24"
+            android:background="@color/colorPrimary" />
+
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            android:background="@color/colorPrimary"/>
+
+        <ImageButton
+            android:id="@+id/zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_zoom_in_24"
+            android:background="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/suivant"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColorHint="?attr/primaryTextColor"
+                    app:hintTextColor="?attr/primaryTextColor">
+
+                    <EditText
+                        android:id="@+id/NumCantique"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="?attr/colorHint"
+                        android:hint="Entrer le numero"
+                        android:inputType="phone"
+                        android:maxLength="3"
+                        android:paddingBottom="30dp"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textColorHint="?attr/primaryTextColor"
+                        android:textSize="16sp"
+                        android:theme="@style/EditTextHint" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/Idbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/background_border_round_btn"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:drawableTint="@android:color/white"
+                    android:padding="5dp"
+                    android:text="GO"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/titre_cantique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Titre du cantique"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TexteTitreCantique"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:fontFamily="casual"
+                    android:textColor="?attr/primaryTextColor"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:id="@+id/TexteCantique"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textStyle="normal"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textCurentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:scrollbarSize="18dp"
+                    android:thumb="@drawable/seek_thumb" />
+
+                <TextView
+                    android:id="@+id/TotalDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <!--ProgressBar
+                android:id="@+id/progressBar_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/colorPrimary"
+                /-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/play"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/background_border_round_green"
+                    android:src="@drawable/ic_play_arrow_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/pause"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/background_border_round_black"
+                    android:src="@drawable/ic_pause_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/stop"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/background_border_round_red"
+                    android:src="@drawable/ic_stop_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/bottomAppBarColor"
+        android:backgroundTint="@android:color/white"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottom_bar" />
+
+</RelativeLayout>
