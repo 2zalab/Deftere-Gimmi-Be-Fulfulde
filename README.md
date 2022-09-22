@@ -22,3 +22,11 @@ Cantiques de l'église adventiste en langue fulfulde
 <a href='https://play.google.com/store/apps/details?id=com.sintel.defteregimmibefulfulde'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="40px"/></a>
 
 
+## Caractéristiques 
+
+- [x] Recherche 🔎 
+- [x] Mode Sombre 🌃 
+- [x] Guide d'utilisation 📝  
+- [x] Sommaire par ordre alphabétique 🔤
+- [x] Partage des cantiques ✝️
+- [x] Noter l'application ⭐️
